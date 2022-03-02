@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head title = "Game - for the exam">
+
+<meta charset="UTF-8">
+<meta name="viewport" content = "width=device-width,initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<title> Guess the number.</title>
+
+<script src = "./Exam.js"></script>
+
+<style>
+body{
+background-color:lightblue;
+font-size:19px;
+font-family:Aria;
+}
+</style>
+
+</head>
+<body>
+<h1> Guess the number </h1>
+<h3>Task - you have to guess a number between 1 and 200</h3>
+
+<label for = "guessText">Enter a guess:</label>
+<input id = "guessText" type = "number" onfocus = "select()">
+
+<p id = "guessPrh"></p>
+
+<input id = "guessButton" type = "button" value = "GUESS" onclick = "guessAnwser()">
+
+<p id = "guessTries">Начален брой проби : 0</p>
+
+<p id = "guessPrevius"></p>
+</body>
+</html>
